@@ -95,10 +95,7 @@ def main():
             print "" + Fore.RED + Style.BRIGHT +"Unknown error occured" + e + Fore.WHITE + Style.DIM +""
             exit()
         end = time.time()
-        readable_end = time.ctime()
-        total = end-start
-        count = int(len(open_ports))
-        sorted_open_port_list = sorted(open_ports)
+        orted_open_port_list = sorted(open_ports)
         if len(total_ports) != len(closed_ports):
             print "" + Fore.RED + Style.BRIGHT +"Not Shwoing %d closed ports\n\n\n" % int(len(closed_ports)) + Fore.WHITE + Style.DIM +""
             print "" + Fore.GREEN + Style.BRIGHT +"PORT \t\t STATE \t\t SERVICE\n"+ Fore.WHITE + Style.DIM +""
